@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="flex">
+  <div>
+    <h1 class="text-lg">Paginated Records</h1>
+
+    <div class="space-y-6" id="stuffs">
+      <% @stuffs.each do |stuff| %>
+        <%= render stuff %>
+      <% end %>
+    </div>
+
+    <%= render "pager", offset: @offset %>
+  </div>
+
+  <div>
+    <h1 class="text-lg">All Records</h1>
+
+    <div class="space-y-6" id="all_stuffs">
+      <% @all_stuffs.each do |stuff| %>
+        <%= render stuff %>
+      <% end %>
+    </div>
+  </div>
+</div>

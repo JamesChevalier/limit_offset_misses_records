@@ -1,0 +1,2 @@
+<%= turbo_stream_action_tag("append", target: "stuffs", template: render(@stuffs).to_s) %>
+<%= turbo_stream_action_tag("replace", target: "pager", template: render("pager", offset: @offset).to_s) %>

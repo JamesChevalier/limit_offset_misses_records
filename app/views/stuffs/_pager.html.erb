@@ -1,0 +1,8 @@
+<div id="pager" class="min-w-full my-8">
+  <%= link_to(
+        "Load more",
+        stuffs_path(offset: offset),
+        class: "rounded py-2 px-4 bg-indigo-600 text-white block hover:bg-indigo-800",
+        data: {turbo_stream: ""}
+      ) %>
+</div>
